@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Belanosima', 'sans-serif';
+}
+header{
+    flex-direction: column;
+    text-align: center;
+    padding-block: 35px;
+}
+
+header > h1{
+    
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 3px;
+    padding-bottom:8px ;
+}
+
+header > h4{
+    color: #646464;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.Billing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.Billing,.Annual{
+   margin-right:40px;
+}
+
+
+.Billing > .Annual > label{
+    color: #004df3;
+    padding-left: 4px;
+}
+
+.Billing > .Monthly > label{
+    color:#646464;
+    padding-left: 4px;
+}
+
+ .Container{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 25px;
+ } 
+
+.Container > div{
+     width: 450px;
+     border: 2px solid #b2aeae;
+     padding: 20px;
+     height: 80vh;
+}
+
+.Container .Pro{
+    color: #004df3;
+    border: 2px solid #004df3;
+}
+
+.Container .top{
+    color: #b2aeae;
+    margin-left: 80px;
+}
+
+.Container .price{
+    margin-top: 10px;
+    margin-left: 80px;
+}
+
+.Container .price i{
+    font-size: 16px;
+}
+
+.price{
+   display:flex;
+   position: relative;
+   margin-bottom: 50px;
+}
+
+.price .desc{
+    position: relative;
+    top:25px;
+    color: #8f8d8d;
+    line-height: 22px;
+    
+
+}
+.Container .price h1{
+    margin-right: 9px;
+    font-size: 80px;
+    line-height:50px;
+    font-weight: 600;
+}
+
+.Permisson{
+    margin-left: 30px;
+}
+
+.Permisson > p{
+    padding: 16px;
+    font-size: 24px;
+    color: #8f8d8d;
+}
+
+.Permisson > p > i{
+    margin-right: 16px;
+    font-size: 30px;
+}
+
+.fa-check{
+    color: rgb(32, 180, 32);
+    font-weight: 600;
+}
+
+.fa-circle-xmark{
+    color: rgb(242, 30, 30);
+    font-weight: 600;
+}
+
+button{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 30px;
+margin-left: 40px;
+padding: 16px 100px;
+background: #fff;
+color: #646464;
+font-size: 24px;
+border: 1px solid #8f8d8d;
+}
+
+.Pro .top h1{
+   color:#004df3
+}
+
+.Pro .price h1{
+    color: #004df3;
+}
+
+.Pro button{
+    color:#004df3;
+    font-weight: 600;
+    background: #bbcbee;
+}
+
+/* LAPTOP VIEW PORT */
+
+@media screen  and (max-width:1440px ){
+    /* .Container{ */
+/*      */
+    /* } */
+}
+
+
+/* MOBILE VIEWPORT */
+
+@media screen and (max-width: 414px) {
+    .Container{
+        flex-direction: column;
+    }
+    header h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .Billing{
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .Billing .Annual {
+        padding: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .Billing .Monthly input{
+        margin-left:8px;
+    }
+    .Billing .Monthly {
+        margin-left: -104px;
+    }
+    .Container >.Basic{
+       width: 90%;
+    }
+    .Container > .Pro{
+        width: 90%; 
+    }
+    .Container > .Enterprise{
+        width: 90%;
+    }
+    button{
+        font-size: 16px;
+        margin-left: 10px;
+    }
+}
